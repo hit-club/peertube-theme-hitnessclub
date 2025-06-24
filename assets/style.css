@@ -1,0 +1,13 @@
+body {
+  --primary: hsl(230, 100%, 78%);
+  --on-primary: hsl(230, 100%, 10%);
+  --border-primary: hsl(230, 100%, 90%);
+
+  --input-bg: hsl(230, 100%, 10%);
+  --input-bg-in-secondary: hsl(230, 100%, 50%);
+
+  --fg: hsl(230, 100%, 90%);
+
+  --bg: hsl(230, 100%, 20%);
+  --bg-secondary: hsl(230, 100%, 40%);
+}
