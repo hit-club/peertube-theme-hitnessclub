@@ -1,15 +1,59 @@
-body {
+body, body#custom-css {
   --primary: hsl(230, 100%, 6%);
   --secondary: hsl(230, 100%, 96%);
   --on-primary: hsl(231, 100%, 67%);
   --border-primary: hsl(230, 100%, 90%);
   --input-fg: #e0e0e1;
   --input-bg: #222;
+  --input-placeholder: #d1d1d1;
+  --input-border-color: #a5a5a5;
   --input-bg-in-secondary: hsl(230, 100%, 50%);
   --menu-bg: hsl(230, 93%, 38%);
   --fg: hsl(230, 100%, 90%);
+  --fg-100: #ddd;
+  --fg-200: #ccc;
   --bg: hsl(230, 100%, 20%);
   --bg-secondary: hsl(230, 100%, 40%);
-
+  --bg-secondary: hsl(230, 100%, 40%);
+  --bg-secondary-400: #222;
+  --blue: hsl(231, 100%, 67%);
   --is-dark: 1;
+}
+
+
+/* Fix the background of the playlist info section in the dark theme */
+.playlist-info {
+  background-color: transparent !important;
+}
+
+/* Hide the publish button, the menu button, and the drawer if not logged in */
+/*
+.user-not-logged-in > .root-header > .root-header-right > my-header > .publish-button,
+.user-not-logged-in > .root-header > .top-left-block > .icon-menu,
+.user-not-logged-in > .sub-header-container > .ng-star-inserted > .menu-wrapper
+{
+display: none !important;
+}
+*/
+
+/* Fix the spacing when the menu is hidden when you aren't logged in */
+/*
+.user-not-logged-in > .sub-header-container > .main-col {
+  margin-inline-start: 0px;
+  width: 100%;
+}
+*/
+
+/* Hide various other things */
+.login-buttons-block, /* login buttons, I just login by going to /admin */
+.block-title, /* hide the "on video.jadin.me" thing */
+div.active-filter  /* hide the filter badges*/
+{
+  display: none !important;
+}
+
+/* remove eventual gamifications (i.e.: like counters) */
+.views, my-video-views-counter, .action-button-like, .action-button-dislike
+{
+display: none !important;
 }
